@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Movie Booking</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="#movies"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="mov1.html"><i class="fas fa-ticket-alt"></i>Add movies</a></li>
+                <li><a href="#bookings"><i class="fas fa-ticket-alt"></i> Bookings</a></li>
+                <li><a href="#users"><i class="fas fa-users"></i> Users</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="index.html" onclick="logout()"><i class="fa-solid fa-arrow-right-to-bracket" ></i>Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+            <!-- Dashboard Overview -->
+            <section id="dashboard" class="dashboard-overview">
+                <div class="card">
+                    <h3>Total Movies</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3>Total Bookings</h3>
+                    <p>450</p>
+                </div>
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>350</p>
+                </div>
+            </section>
+            <!-- <a href="mov1.html"></a> -->
+    <!-- Movie List Display -->
+    <div class="movie-list" >
+        <h2>Movie List</h2>
+        <div id="movieList"  ></div>
+    </div>
+            <!-- Movie Management -->
+            <section id="movies" class="movie-management">
+                <h2>Manage Movies</h2>
+                <div class="movie-list">
+                    <div class="movie-item" data-id="1">
+                        <img src="kalki.jpg" alt="Movie Image">
+                        <h3>Kalki 2898</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="2">
+                        <img src="avengers.jpg" alt="Movie Image">
+                        <h3>Avengers</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="3">
+                        <img src="salaar.jpg" alt="Movie Image">
+                        <h3>Salaar</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="4">
+                        <img src="interstellar.jpg" alt="Movie Image">
+                        <h3>Interstellar</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="5">
+                        <img src="itends.avif" alt="Movie Image">
+                        <h3>It ends with us</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="6">
+                        <img src="conjuring3.webp" alt="Movie Image">
+                        <h3>Conguring 3</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="7">
+                        <img src="joker.avif" alt="Movie Image">
+                        <h3>Joker</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="8">
+                        <img src="maharshi.jpg" alt="Movie Image">
+                        <h3>Maharshi</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="9">
+                        <img src="murari.jpg" alt="Movie Image">
+                        <h3>Murari</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="10">
+                        <img src="stree2.jpg" alt="Movie Image">
+                        <h3>Stree2</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="11">
+                        <img src="love.jpg" alt="Movie Image">
+                        <h3>100% Love</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="12">
+                        <img src="vikram.jpg" alt="Movie Image">
+                        <h3>Vikram</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="13">
+                        <img src="vedaa.png" alt="Movie Image">
+                        <h3>Vedaa</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    
+                    <div class="movie-item" data-id="14">
+                        <img src="brahmastra.avif" alt="Movie Image">
+                        <h3>Brahmastra</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="15">
+                        <img src="kgf2.jpg" alt="Movie Image">
+                        <h3>KGF 2</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="16">
+                        <img src="blinktwice.jpg" alt="Movie Image">
+                        <h3>Blink Twice</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="17">
+                        <img src="t.jpg" alt="Movie Image">
+                        <h3>Thangalaan</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="18">
+                        <img src="itends.avif" alt="Movie Image">
+                        <h3>Itends</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="19">
+                        <img src="mb.jpg" alt="Movie Image">
+                        <h3>Mister Bachan</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="20">
+                        <img src="prisoners.jpg" alt="Movie Image">
+                        <h3>Prisoners</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <div class="movie-item" data-id="21">
+                        <img src="d2.jpg" alt="Movie Image">
+                        <h3>Demonte colony 2</h3>
+                        <button onclick="editMovie(this)">Edit</button>
+                        <button onclick="deleteMovie(this)">Delete</button>
+                    </div>
+                    <!-- Add more movies as needed -->
+                </div>
+            <script src="dashboard.js"></script>
+            <script>
+                // Check if the user is an admin
+                if (sessionStorage.getItem('isAdmin') !== 'true') {
+                    alert('Access denied. Only admins can access this page.');
+                    window.location.href = 'homepage.html'; // Redirect to homepage
+                }
+                function logout() {
+        sessionStorage.removeItem('isAdmin');
+        alert('You have been logged out.');
+    }
+            </script>
+        
+           
+
+    
+</body>
+</html>

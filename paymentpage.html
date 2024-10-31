@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .payment-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .payment-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .payment-details {
+            margin-bottom: 20px;
+        }
+        .home-btn{ padding: 10px 20px;
+            
+            border: none;
+            background-color: #9f60c6;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;}
+        .home-btn:hover {
+            background-color: #5a5fcf;
+        }
+
+        .confirm-btn {
+            padding: 10px 20px;
+            background-color: #9f60c6;
+            
+            /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); */
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-bottom:10px;
+        }
+
+        .confirm-btn:hover {
+            background-color: #5a5fcf;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Summary</h2>
+        <div class="payment-details">
+            <p>Tickets: <span id="ticketCount">0</span></p>
+            <p>Total Price: Rs <span id="totalAmount">0</span></p>
+        </div>
+        <button class="confirm-btn" onclick="finalizePayment()">Pay Now</button>
+          <!-- Go to Home Button -->
+          <button class="home-btn" onclick="goToHome()" >Go to Home</button>
+    </div>
+
+    <script>
+        // Retrieve the booking details from session storage
+        const ticketCount = sessionStorage.getItem('ticketCount');
+        const totalAmount = sessionStorage.getItem('totalAmount');
+
+        // Update the payment summary with the stored values
+        document.getElementById('ticketCount').innerText = ticketCount;
+        document.getElementById('totalAmount').innerText = totalAmount;
+
+        function finalizePayment() {
+            alert('Payment of Rs ' + totalAmount + ' for ' + ticketCount + ' tickets is successful.');
+            // Implement final payment logic here or redirect to a confirmation page
+        }
+        function goToHome() {
+            window.location.href = 'index.html'; // Replace 'index.html' with your home page file name
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: verdana, sans-serif;
+    background-color: #2F3234;
+    min-height:100vh;
+    align-items: center;
+    justify-content: center;
+    }
+    
+nav{
+    width: 100%;
+    height: 70px;
+    background:linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    }
+    
+nav ul{
+    float: left;
+    }
+    
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    }
+    
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #090909;
+    }
+
+.main-container{
+    color:#adadad;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap:2rem;
+    margin-top: 5;
+}
+
+.sidebar{
+    background:linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    backdrop-filter: blur(2px);
+    border-radius:1rem;
+    padding: 1rem 1rem;
+    height:fit-content;
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.sidebar-groups{
+    margin-bottom: 1rem;
+}
+
+.sg-title{
+    margin-bottom: .5rem;
+    color:black;
+}
+
+input{
+    margin-bottom:.6rem;
+}
+
+input[type=checkbox]:checked{
+    accent-color: #cd8c38;
+}
+
+input[type=radio]:checked{
+    accent-color: #cd8c38;
+}
+
+label{
+    margin-left: .5rem;
+    color:white;
+}
+
+.btn-o {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #F7E8A4;
+    border-radius: 2rem;
+    color: #1e1f26;
+    transition: .3s;
+}
+
+.btn-l{
+    width:100;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 15px;
+}
+
+.card {
+    width: 70%; /* Reduce the width percentage to make the cards narrower */
+    max-width: 200px; /* Set a lower maximum width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px; 
+    margin: 10px 0;
+}
+
+.card img {
+    width: 100%;
+    height: 150px; 
+}
+
+.card-body {
+    padding: 8px; 
+    background-color: #98a4b3;
+}
+
+.card-title {
+    color: #7A5980;
+    font-size: 15px; 
+    margin-bottom: 5px;
+    background-color: #e0e0e0;
+    padding: 1px;
+}
+
+.card-text {
+    font-size: 14px; 
+    margin-bottom: 5px;
+    color: #1e1f26;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.btn {
+    align-self: center;
+    padding: 8px 12px;
+    transition: .3s;
+    margin-top: .2rem;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
+}
+/* navbar */
+#nav-bar{
+    max-height:35px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px;
+    /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  */
+    background-color: #090606;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    color: rgb(11, 11, 10);
+    min-width: 250px;
+    position: sticky;
+    
+    
+}
+.gradient-text {
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Gradient colors */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent; /* Make the text color transparent */
+  }
+
+a{
+    text-decoration: none;
+    
+
+}
+/* navbar end */

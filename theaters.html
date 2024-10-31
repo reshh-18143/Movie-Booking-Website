@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking Page</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Name</h1>
+        <div class="tags">
+           
+        </div>
+        <div class="date-bar">
+            <button id="prev" class="nav-button">&lt;</button>
+            <div class="dates">
+                <button class="date-button">Sat 31 Aug</button>
+                <button class="date-button">Sun 01 Sep</button>
+                <button class="date-button">Mon 02 Sep</button>
+                <button class="date-button">Tue 03 Sep</button>
+                <button class="date-button">Wed 04 Sep</button>
+            </div>
+            <button id="next" class="nav-button">&gt;</button>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section class="filters">
+            <div class="language-filter">Telugu - 2D</div>
+            <div class="filter-options">
+                <select id="price-range-filter">
+                    <option value=""> Price Range</option>
+                    <option value="0-100">Rs. 0-100</option>
+                    <option value="101-200">Rs. 101-200</option>
+                    <option value="201-300">Rs. 201-300</option>
+                    <option value="301-400">Rs. 301-400</option>
+                </select>
+    
+                <select id="show-timings-filter">
+                    <option value=""> Show Timings</option>
+                    <option value="morning">Morning 12:00-11:59 AM</option>
+                    <option value="afternoon">Afternoon 12:00-3:59 PM</option>
+                    <option value="evening">Evening 4:00-6:59 PM</option>
+                    <option value="night">Night</option>
+                </select>
+    
+                <input type="search" placeholder="Search...">
+            </div>
+        </section>
+    </main>
+    
+        <section class="theater-list">
+            <article class="theater">
+                <h3>AMB Cinemas: Gachibowli</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:35 PM <span>LASER DOLBY ATMOS</span></button> 
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+
+            <article class="theater">
+                <h3>AAA Cinemas: Ameerpet</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+
+            </article>
+
+            <article class="theater">
+                <h3>Asian Sha & Shahensha: Chintal</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:35 PM <span>LASER DOLBY ATMOS</span></button> 
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+
+            <article class="theater">
+                <h3>INOX: Sattva Necklace Mall: Secunderabad</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:35 PM <span>LASER DOLBY ATMOS</span></button> 
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+
+            <article class="theater">
+                <h3>INOX: Ashoka One Mall: Kukatpally Y Junction</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+
+            <article class="theater">
+                <h3>INOX: GVK One Mall: Banjara Hills</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    
+            </article>
+
+            <article class="theater">
+                <h3>Cinepolis: Lulu Mall: Hyderabad</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:35 PM <span>LASER DOLBY ATMOS</span></button> 
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+
+            <article class="theater">
+                <h3>MovieMax:AMR, ECIL: Secunderabad</h3>
+                <div class="theater-info">
+                    
+                </div>
+                <div class="showtimes">
+                    <button>11:35 AM <span>LASER DOLBY DIGITAL</span></button> 
+                    <button>12:40 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>07:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>07:35 PM <span>LASER DOLBY ATMOS</span></button>
+                    <button>10:20 PM <span>LASER DOLBY DIGITAL</span></button>
+                    <button>10:35 PM <span>LASER DOLBY ATMOS</span></button> 
+                    <button>10:50 PM <span>LASER DOLBY ATMOS</span></button>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <button id="updateButton" class="update-button">Update</button>
+    </footer>
+
+    <script src="movies.js"></script>
+
+    <script>
+        localStorage.clear();
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dateButtons = document.querySelectorAll(".date-button");
+            const showtimeButtons = document.querySelectorAll(".showtimes button");
+
+            const selectedDate = localStorage.getItem("selectedDate");
+            if (selectedDate) {
+                dateButtons.forEach(button => {
+                    if (button.textContent.trim() === selectedDate) {
+                        button.classList.add("selected");
+                    }
+                });
+            }
+
+            const selectedShowtime = localStorage.getItem("selectedShowtime");
+            if (selectedShowtime) {
+                showtimeButtons.forEach(button => {
+                    if (button.textContent.trim() === selectedShowtime) {
+                        button.classList.add("selected");
+                    }
+                });
+            }
+
+            dateButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    dateButtons.forEach(btn => btn.classList.remove("selected"));
+                    this.classList.add("selected");
+                    localStorage.setItem("selectedDate", this.textContent.trim());
+                });
+            });
+
+            showtimeButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    showtimeButtons.forEach(btn => btn.classList.remove("selected"));
+                    this.classList.add("selected");
+                    localStorage.setItem("selectedShowtime", this.textContent.trim());
+                });
+            });
+
+            document.getElementById("updateButton").addEventListener("click", function() {
+                alert("Updated! You can select your seats");
+        });
+
+        });
+
+
+       
+    document.addEventListener("DOMContentLoaded", function() {
+        // Retrieve the selected movie title from session storage
+        const selectedMovieTitle = sessionStorage.getItem('selectedMovieTitle');
+
+        // Replace the movie name in the header with the selected movie title
+        if (selectedMovieTitle) {
+            document.querySelector('header h1').innerText = selectedMovieTitle;
+        }
+
+        // Update button logic
+        document.getElementById("updateButton").addEventListener("click", function() {
+            window.location.href = "seatsbooking.html"; // Redirect to seatsbooking page
+        });
+    });
+
+
+    </script>
+</body>
+</html>

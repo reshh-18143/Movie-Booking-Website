@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="movielist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    </head>
+
+<body>
+    <!-- navbar -->
+    <div id="nav-bar">
+        <i class="fa-brands fa-slack fa-fade fa-2xl gradient-text" style="color: #ac70c2;"></i> 
+        <a href="index.html"  class="gradient-text" style=" font-size: 20px; font-weight: bold;"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="signup.html" class="gradient-text"  style="font-size: 16px; font-weight: bold;" ><i class="fa-solid fa-arrow-right-to-bracket" ></i> Login/Signup</a>
+        
+    </div>
+
+      <section class="main-container">
+        <div class="sidebar">
+            <form action="#">
+                <div class="sidebar-groups">
+                    <h4 class="sg-title">Genre</h4>
+                    <input type="checkbox" id="horror" name="horror">
+                    <label for="adventure">Horror</label><br>
+                    <input type="checkbox" id="thriller" name="thriller">
+                    <label for="adventure">Thriller</label><br>
+                    <input type="checkbox" id="history" name="history">
+                    <label for="adventure">History</label><br>
+                    <input type="checkbox" id="adventure" name="adventure">
+                    <label for="adventure">Adventure</label><br>
+                    <input type="checkbox" id="sci-fi" name="sci-fi">
+                    <label for="adventure">Sci-Fi</label><br>
+                    <input type="checkbox" id="action" name="action">
+                    <label for="adventure">Action</label><br>
+                    <input type="checkbox" id="rom-com" name="rom-com">
+                    <label for="adventure">RomCom</label><br>
+                    <input type="checkbox" id="animation" name="animation">
+                    <label for="adventure">Animation</label><br>
+                    <input type="checkbox" id="comedy" name="comedy">
+                    <label for="adventure">Comedy</label><br>
+                    <input type="checkbox" id="doc" name="doc">
+                    <label for="adventure">Documentary</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h4 class="sg-title">Language</h4>
+                    <input type="checkbox" id="english" name="english" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="checkbox" name="telugu" value="telugu">
+                    <label for="telugu">Telugu</label><br>
+                    <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                    <label for="hindi">Hindi</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h4 class="sg-title">Timings</h4>
+                    <input type="radio" id="morning" name="time" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" id="noon" name="time" value="noon">
+                    <label for="morning">Afternoon</label><br>
+                    <input type="radio" id="evng" name="time" value="evng">
+                    <label for="morning">Evening</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <a href="#" class="btn-l btn-o">Apply Features</a>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="kalki.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalki 2898</h5>
+                            <p class="card-text">Price : 40$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Kalki', 'kalki.jpg')">Book Now</button>
+                            
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="prisoners.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Prisoners</h5>
+                            <p class="card-text">Price : 15$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Prisoners', 'prisoners.jpg')">Book Now</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="kgf2.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kgf 2</h5>
+                            <p class="card-text">Price : 40$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Kgf2', 'kgf2.jpg')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="salaar.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Salaar</h5>
+                            <p class="card-text">Price : 30$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Saalar', 'salaar.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="vikram.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vikram</h5>
+                            <p class="card-text">Price : 30$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Vikram', 'vikram.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        
+            
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="interstellar.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Interstellar</h5>
+                            <p class="card-text">Price : 40$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Interstellar', 'interstellar.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="avengers.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers </h5>
+                            <p class="card-text">Price : 40$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Avengers', 'avengers.jpg')">Book Now</button>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="joker.avif" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Joker</h5>
+                            <p class="card-text">Price : 35$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Joker', 'joker.avif')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="Stree2.webp" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Stree 2</h5>
+                            <p class="card-text">Price : 30$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Stree 2', 'Stree2.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="murari.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Murari</h5>
+                            <p class="card-text">Price : 10$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Murari', 'murari.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="conjuring3.webp" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Conjuring 3</h5>
+                            <p class="card-text">Price : 20$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Conjuring3', 'conjuring3.webp')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="vedaa.png" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vedaa</h5>
+                            <p class="card-text">Price : 10$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Vedaa', 'vedaa.png')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="love.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">100% Love</h5>
+                            <p class="card-text">Price : 15$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Love', 'love.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="maharshi.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Maharshi</h5>
+                            <p class="card-text">Price : 20$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Maharshi', 'maharshi.jpg')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="itends.avif" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">It Ends With Us</h5>
+                            <p class="card-text">Price : 10$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('It Ends With Us', 'itends.avif')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="brahmastra.avif" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Brahmastra</h5>
+                            <p class="card-text">Price : 15$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Brahmastra', 'brahmastra.avif')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="demonte.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Demonte Colony 2</h5>
+                            <p class="card-text">Price : 10$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Demonte Colony 2', 'demonte.jpg')">Book Now</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="blinktwice.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Blink Twice</h5>
+                            <p class="card-text">Price : 10$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Blinktwice 2 ', 'blinktwice.jpg')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="avengers.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers</h5>
+                            <p class="card-text">Price : 20$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Avengers', 'avengers.jpg')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="dil.jpg" alt="..." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Ae Dil Hai Mushkil</h5>
+                            <p class="card-text">Price : 20$</p>
+                            <button class="btn btn-primary" onclick="selectMovie('Ae Dil Hai Mushkil', 'dil.jpg')">Book Now</button>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+      </section>
+      <!-- <script>
+        // Function to select a movie and store the selected movie details in session storage
+        function selectMovie(title, poster) {
+            sessionStorage.setItem('selectedMovieTitle', title);
+            sessionStorage.setItem('selectedMoviePoster', poster);
+            window.location.href = "seatsbooking.html"; // Redirect to seat booking page
+        }
+    </script> -->
+    <script>
+        function selectMovie(title, poster) {
+            sessionStorage.setItem('selectedMovieTitle', title);
+            sessionStorage.setItem('selectedMoviePoster', poster);
+            window.location.href = "theaters.html"; // Redirect to kalki page
+        }
+    </script>
+    
+    
+</body>
+</html>
